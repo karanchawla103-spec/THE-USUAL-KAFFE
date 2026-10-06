@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Usual Kaffèe | Artisan Cafe & Eatery</title>
+  <meta name="description" content="Experience The Usual Kaffèe (थे उसूल काफ़ी) in Hari Nagar, New Delhi. Artisan brews, hand-beaten coffee, live cafe vibes, smart Gaia AI barista, and table reservations." />
+  
+  <!-- OpenGraph & Social Metadata -->
+  <meta property="og:title" content="The Usual Kaffèe | Artisan Cafe & Eatery" />
+  <meta property="og:description" content="Milap Market, Hari Nagar, New Delhi. Famous Hand-Beaten Coffee, Street Fusion Momos, Farmhouse Pizza & Gaia AI Barista." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0a0908" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- CDN External Library: Chart.js for Data Visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Skip to Content for Screen Readers & Keyboard Users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" role="progressbar" aria-label="Page reading progress" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- Ambient Aurora Backdrops -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- 1. Preloader Screen -->
+  <div id="preloader" aria-live="polite" aria-label="Loading The Usual Kaffèe">
+    <div class="preloader-cup">
+      <div class="preloader-steam">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="preloader-title">THE USUAL KAFFÈE</div>
+    <div class="preloader-sub">थे उसूल काफ़ी · Hari Nagar</div>
+  </div>
+
+  <!-- Accessibility Controls Utility Bar -->
+  <aside class="a11y-bar" aria-label="Accessibility & Preferences Controls">
+    <div class="container a11y-content">
+      <div class="a11y-pill-group">
+        <span>Accessibility:</span>
+        <button id="font-decrease" class="a11y-btn" title="Decrease font size" aria-label="Decrease text size">A−</button>
+        <button id="font-reset" class="a11y-btn" title="Reset font size" aria-label="Default text size">A</button>
+        <button id="font-increase" class="a11y-btn" title="Increase font size" aria-label="Increase text size">A+</button>
+        <button id="contrast-toggle" class="a11y-btn" title="High contrast mode" aria-pressed="false">High Contrast</button>
+        <button id="motion-toggle" class="a11y-btn" title="Toggle reduced motion" aria-pressed="false">Reduce Motion</button>
+      </div>
+      <div class="a11y-pill-group">
+        <span>Ambiance:</span>
+        <button id="theme-toggle" class="a11y-btn" aria-label="Toggle theme mode">🌙 Mode</button>
+        <span style="color: var(--amber-glow); font-weight: 600;">📍 Milap Market, New Delhi</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 2. Sticky Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a href="#hero" class="brand-link" aria-label="The Usual Kaffèe Homepage">
+        <div class="brand-logo-mark" aria-hidden="true">U</div>
+        <div class="brand-titles">
+          <div class="brand-title">
+            THE USUAL KAFFÈE
+          </div>
+          <div class="brand-subtitle">थे उसूल काफ़ी · EST. DELHI</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about">Story</a></li>
+          <li><a href="#features">Signatures</a></li>
+          <li><a href="#dashboard">Live Cafe</a></li>
+          <li><a href="#live-data">Delhi Pulse</a></li>
+          <li><a href="#chatbot">Gaia Barista</a></li>
+          <li><a href="#dataviz">Insights</a></li>
+          <li><a href="#gallery">Vibe</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="status-pill" title="Current Cafe Operating Status">
+          <span class="status-dot"></span>
+          <span>Open · Closes 12 AM</span>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-sm">Reserve Table</a>
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation Menu">
+      <a href="#about">Our Story</a>
+      <a href="#features">Signature Brews & Eats</a>
+      <a href="#dashboard">Live Cafe Dashboard</a>
+      <a href="#live-data">Delhi Pulse & Weather</a>
+      <a href="#chatbot">Gaia AI Barista</a>
+      <a href="#dataviz">Popular Hours & Insights</a>
+      <a href="#gallery">Gallery & Vibe</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn-primary" style="margin-top: 10px;">Reserve a Table</a>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+
+    <!-- 3. Hero Section -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badges">
+            <span class="hero-badge-tag">
+              ✨ Milap Market · Hari Nagar · New Delhi
+            </span>
+            <span class="hero-badge-rating">
+              ★ 4.7 <span>(32 Google Reviews)</span>
+            </span>
+          </div>
+
+          <h1 id="hero-heading" class="hero-h1">
+            Where <em>Hand-Beaten Coffee</em> Meets Modern Delhi Comfort.
+          </h1>
+
+          <p class="hero-desc">
+            Welcome to <strong>The Usual Kaffèe</strong> (थे उसूल काफ़ी). From whipped velvety cloud coffees and crispy steamed momos to stone-baked farmhouse pizzas, experience an authentic, inclusive neighborhood haven crafted for work, laughter, and midnight cravings.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#chatbot" class="btn btn-primary">
+              <span>Ask Gaia AI Barista</span>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="#dashboard" class="btn btn-secondary">
+              <span>Explore Live Cafe</span>
+            </a>
+          </div>
+
+          <div class="hero-quick-meta">
+            <div class="hero-meta-item">
+              <span class="hero-meta-val">₹1–200</span>
+              <span class="hero-meta-label">Pocket-Friendly Avg / Person</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-val">12:00 AM</span>
+              <span class="hero-meta-label">Late Night Closing Everyday</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-val">Dine & Kerbside</span>
+              <span class="hero-meta-label">No-Contact Pickup Available</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Showcase Card -->
+        <div class="hero-showcase">
+          <div class="hero-glass-card">
+            <div class="card-header-badge">
+              <span class="card-pill">House Special</span>
+              <span style="font-size: 0.8rem; color: #4ade80; font-weight: 600;">● Fresh Batch Whipping Now</span>
+            </div>
+
+            <div class="coffee-art-wrapper">
+              <div class="coffee-visual" aria-label="Visual cup of fresh hand-beaten coffee">
+                <div class="coffee-latte-foam"></div>
+              </div>
+
+              <!-- Floating UI spec cards -->
+              <div class="floating-spec-card floating-card-1">
+                <div class="spec-icon">⚡</div>
+                <div class="spec-text">
+                  <h4>Hand-Whipped</h4>
+                  <p>15 mins micro-aerated foam</p>
+                </div>
+              </div>
+
+              <div class="floating-spec-card floating-card-2">
+                <div class="spec-icon">🌾</div>
+                <div class="spec-text">
+                  <h4>Arabica Estate</h4>
+                  <p>Slow roasted Chicory blend</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="live-tasting-notes">
+              <div class="note-item">
+                <span class="note-title">Roast Level</span>
+                <span class="note-val">Medium-Dark</span>
+              </div>
+              <div class="note-item">
+                <span class="note-title">Tasting Notes</span>
+                <span class="note-val">Caramel & Cocoa</span>
+              </div>
+              <div class="note-item">
+                <span class="note-title">Price</span>
+                <span class="note-val">₹89 Only</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. About Section -->
+    <section id="about" class="about-section" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div class="about-visual-stack">
+          <div class="about-glass-card">
+            <blockquote class="about-quote">
+              “We built The Usual Kaffèe not as another cold cafe, but as the living room you always wanted—warm, unhurried, and welcoming to everyone without exception.”
+            </blockquote>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+              Founded in Hari Nagar, West Delhi, The Usual Kaffèe celebrates nostalgia through our signature desi hand-beaten coffee, paired with street fusion recipes perfected over years.
+            </p>
+
+            <div class="about-stats-grid">
+              <div class="about-stat-box">
+                <div class="about-stat-num">4.7★</div>
+                <div class="about-stat-lbl">Customer Rating (32 Reviews)</div>
+              </div>
+              <div class="about-stat-box">
+                <div class="about-stat-num">₹1–200</div>
+                <div class="about-stat-lbl">Truly Pocket-Friendly Dining</div>
+              </div>
+            </div>
+
+            <div class="inclusion-pills">
+              <span class="inclusion-pill">
+                <span>♀</span> Identifies as Women-Owned
+              </span>
+              <span class="inclusion-pill green">
+                <span>🏳️‍🌈</span> LGBTQ+ Friendly Safe Space
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-content">
+          <div class="section-tag">Our Roots & Heritage</div>
+          <h2 id="about-heading" class="section-h2">A Safe, Warm Creative Sanctuary in Hari Nagar</h2>
+          <p>
+            Tucked inside Milap Market, Beri Wala Bagh, <strong>The Usual Kaffèe</strong> is where local college students study, creators collaborate, and families gather for late-night food.
+          </p>
+          <p>
+            Whether you are dropping by for a solo evening with a book or gathering with 6 friends for an affordable feast, you are cherished here.
+          </p>
+
+          <ul class="feature-list">
+            <li class="feature-list-item">
+              <div class="feature-icon-bullet">✓</div>
+              <div>
+                <strong>Women-Led Entrepreneurship:</strong> Proudly women-owned, fostering empathetic hospitality, hygiene, and safe community dining.
+              </div>
+            </li>
+            <li class="feature-list-item">
+              <div class="feature-icon-bullet">✓</div>
+              <div>
+                <strong>Zero-Pretense Pricing:</strong> Every item is thoughtfully priced between ₹1 and ₹200, ensuring gourmet food remains accessible to all.
+              </div>
+            </li>
+            <li class="feature-list-item">
+              <div class="feature-icon-bullet">✓</div>
+              <div>
+                <strong>Open Until 12:00 Midnight:</strong> Late-night work shifts or post-dinner sweet cravings, our ovens and steamers run hot till midnight.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Key Features / Menu Highlights -->
+    <section id="features" class="features-section" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Culinary Masterpieces</div>
+          <h2 id="features-heading" class="section-h2">Handcrafted Signatures That Diners Rave About</h2>
+          <p class="section-p">
+            Recognized across West Delhi for vibrant flavors, crisp wok tosses, and slow-whipped cafe classics.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1 -->
+          <article class="feature-card">
+            <span class="feature-badge-corner">Most Loved · #1</span>
+            <div class="feature-card-icon" aria-hidden="true">☕</div>
+            <h3>Desi Hand-Beaten Coffee</h3>
+            <p>
+              Traditional Indian household coffee whipped by hand into a thick golden butterscotch crema. Poured with silky whole milk for an indulgent, velvety warmth.
+            </p>
+            <div class="feature-card-footer">
+              <span>Hot / Chilled Frappe</span>
+              <span>₹89 / ₹119</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="feature-card">
+            <span class="feature-badge-corner">Street Fusion Favorite</span>
+            <div class="feature-card-icon" aria-hidden="true">🥟</div>
+            <h3>Steamed & Kurkure Momos</h3>
+            <p>
+              Delicate, translucent dumplings packed with finely minced herbs and veggies, served with our signature fiery red garlic dip and creamy mayo.
+            </p>
+            <div class="feature-card-footer">
+              <span>Steamed · Fried · Crispy</span>
+              <span>From ₹99</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="feature-card">
+            <span class="feature-badge-corner">Italian Delhi Fusion</span>
+            <div class="feature-card-icon" aria-hidden="true">🍝</div>
+            <h3>Mixed Sauce Penne Pasta</h3>
+            <p>
+              The best of both worlds: creamy white garlic béchamel meets tangy red arrabiata pomodoro, loaded with bell peppers, sweet corn, and herbs.
+            </p>
+            <div class="feature-card-footer">
+              <span>Chef's Choice</span>
+              <span>₹149</span>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="feature-card">
+            <span class="feature-badge-corner">Stone-Baked Comfort</span>
+            <div class="feature-card-icon" aria-hidden="true">🍕</div>
+            <h3>Farmhouse Thin-Crust Pizza</h3>
+            <p>
+              Crispy hand-stretched dough layered with spiced tomato passata, crunchy capsicum, onions, mushrooms, and 100% mozzarella cheese.
+            </p>
+            <div class="feature-card-footer">
+              <span>Fresh Baked</span>
+              <span>₹169</span>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="feature-card">
+            <span class="feature-badge-corner">Wok-Fired Nostalgia</span>
+            <div class="feature-card-icon" aria-hidden="true">🥢</div>
+            <h3>Desi Street Wok Chowmein</h3>
+            <p>
+              Smoky noodles flash-tossed on high flame with crisp cabbage, julienned peppers, dark soy, and house chili seasoning. Pure comfort.
+            </p>
+            <div class="feature-card-footer">
+              <span>Delhi Style</span>
+              <span>₹109</span>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="feature-card">
+            <span class="feature-badge-corner">Zero-Hassle Service</span>
+            <div class="feature-card-icon" aria-hidden="true">🛵</div>
+            <h3>Kerbside & No-Contact Delivery</h3>
+            <p>
+              Drive by Milap Market and receive your hot order directly in your car, or request sealed no-contact delivery right to your doorstep.
+            </p>
+            <div class="feature-card-footer">
+              <span>Fast & Polite Service</span>
+              <span>Call 088821 61836</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Interactive Dashboard Section -->
+    <section id="dashboard" class="dashboard-section" aria-labelledby="dash-heading">
+      <div class="container">
+        <div class="dashboard-wrapper">
+          <div class="dash-header">
+            <div class="dash-title-group">
+              <h3 id="dash-heading">Live Cafe Interactive Terminal</h3>
+              <p>Explore real-time seating, dial your custom roast profile, or estimate your party bill</p>
+            </div>
+            <div class="dash-tabs" role="tablist" aria-label="Dashboard views">
+              <button class="dash-tab-btn active" data-tab="tab-tables" role="tab" aria-selected="true">
+                🪑 Live Table Map
+              </button>
+              <button class="dash-tab-btn" data-tab="tab-profiler" role="tab" aria-selected="false">
+                ☕ Roast & Flavor Profiler
+              </button>
+              <button class="dash-tab-btn" data-tab="tab-budget" role="tab" aria-selected="false">
+                💰 Budget & Group Estimator
+              </button>
+            </div>
+          </div>
+
+          <!-- Tab 1: Live Table Availability -->
+          <div id="tab-tables" class="dash-tab-content active" role="tabpanel">
+            <div class="availability-grid">
+              <div class="table-map-card">
+                <div class="table-map-header">
+                  <h4 style="font-size: 1.1rem; font-weight: 700;">Floor Layout (Milap Market Hall)</h4>
+                  <div style="font-size: 0.78rem; display: flex; gap: 14px;">
+                    <span style="color: #4ade80;">● Available</span>
+                    <span style="color: #f87171;">● Occupied</span>
+                    <span style="color: var(--amber-glow);">● Selected</span>
+                  </div>
+                </div>
+
+                <div class="table-layout-grid">
+                  <div class="cafe-table-node available selected" data-table="1">
+                    <span class="table-num">T-01</span>
+                    <span class="table-seats">2 Guests (Window)</span>
+                    <span class="table-status-tag">Available</span>
+                  </div>
+                  <div class="cafe-table-node occupied" data-table="2">
+                    <span class="table-num">T-02</span>
+                    <span class="table-seats">4 Guests (Cozy Booth)</span>
+                    <span class="table-status-tag">Occupied</span>
+                  </div>
+                  <div class="cafe-table-node available" data-table="3">
+                    <span class="table-num">T-03</span>
+                    <span class="table-seats">2 Guests (Work Bar)</span>
+                    <span class="table-status-tag">Available</span>
+                  </div>
+                  <div class="cafe-table-node occupied" data-table="4">
+                    <span class="table-num">T-04</span>
+                    <span class="table-seats">6 Guests (Lounge)</span>
+                    <span class="table-status-tag">Occupied</span>
+                  </div>
+                  <div class="cafe-table-node available" data-table="5">
+                    <span class="table-num">T-05</span>
+                    <span class="table-seats">4 Guests (Center)</span>
+                    <span class="table-status-tag">Available</span>
+                  </div>
+                  <div class="cafe-table-node available" data-table="6">
+                    <span class="table-num">T-06</span>
+                    <span class="table-seats">2 Guests (Quiet Corner)</span>
+                    <span class="table-status-tag">Available</span>
+                  </div>
+                  <div class="cafe-table-node occupied" data-table="7">
+                    <span class="table-num">T-07</span>
+                    <span class="table-seats">4 Guests (Garden Nook)</span>
+                    <span class="table-status-tag">Occupied</span>
+                  </div>
+                  <div class="cafe-table-node available" data-table="8">
+                    <span class="table-num">T-08</span>
+                    <span class="table-seats">2 Guests (Coffee Bar)</span>
+                    <span class="table-status-tag">Available</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="table-side-panel">
+                <div class="queue-timer-card">
+                  <div class="queue-mins">~4</div>
+                  <div class="queue-sub">Minutes Current Wait Time</div>
+                  <div style="font-size: 0.75rem; color: #4ade80; margin-top: 4px;">● Seating fast right now</div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.03); padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--border-light);">
+                  <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Selected Table</div>
+                  <div id="selected-table-label" style="font-size: 1.25rem; font-weight: 700; color: var(--coffee-crema); margin: 4px 0;">Table #1</div>
+                  <div id="selected-table-status" style="font-size: 0.85rem; color: #4ade80; margin-bottom: 12px;">Ready for immediate seating · Click Reserve Below</div>
+                  <a href="#contact" class="btn btn-primary btn-sm" style="width: 100%;">Instant Table Hold</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Flavor Roaster Profiler -->
+          <div id="tab-profiler" class="dash-tab-content" role="tabpanel">
+            <div class="profiler-grid">
+              <div class="profiler-controls">
+                <div class="control-slider-group">
+                  <div class="slider-label-row">
+                    <label for="slider-roast">Roast Depth</label>
+                    <span>Light ↔ Dark</span>
+                  </div>
+                  <input type="range" id="slider-roast" class="control-slider" min="10" max="100" value="65" />
+                </div>
+
+                <div class="control-slider-group">
+                  <div class="slider-label-row">
+                    <label for="slider-milk">Milk Foam Silkiness</label>
+                    <span>Crisp ↔ Velvety Microfoam</span>
+                  </div>
+                  <input type="range" id="slider-milk" class="control-slider" min="10" max="100" value="85" />
+                </div>
+
+                <div class="control-slider-group">
+                  <div class="slider-label-row">
+                    <label for="slider-sweet">Caramelized Sugar Whipping</label>
+                    <span>Sugar-Free ↔ Desi Sweet</span>
+                  </div>
+                  <input type="range" id="slider-sweet" class="control-slider" min="0" max="100" value="60" />
+                </div>
+              </div>
+
+              <div class="profiler-output-card">
+                <div style="font-size: 0.78rem; text-transform: uppercase; color: var(--amber-glow); font-weight: 700;">Your Perfect Coffee Match</div>
+                <h4 id="match-brew-title" class="match-brew-title">The Signature Desi Hand-Beaten Coffee</h4>
+                <p id="match-brew-desc" style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;">
+                  Thick velvety foam whipped meticulously by hand with caramel notes and rich warmth.
+                </p>
+                <div id="match-brew-price" style="font-size: 1.6rem; font-weight: 800; color: var(--amber-glow); margin-bottom: 12px;">₹89</div>
+                <a href="#contact" class="btn btn-secondary btn-sm">Order This Brew</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Budget & Group Estimator -->
+          <div id="tab-budget" class="dash-tab-content" role="tabpanel">
+            <div class="cost-calculator-card">
+              <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Party Size & Feast Budget Planner</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 24px;">
+                Verified pricing under ₹1–200 per head. Plan your table order transparently!
+              </p>
+
+              <div class="form-group-grid">
+                <div class="form-field">
+                  <label for="calc-guests" class="form-label">Number of People: <span id="calc-guests-val" style="color: var(--amber-glow); font-weight: 700;">2</span></label>
+                  <input type="range" id="calc-guests" class="control-slider" min="1" max="10" value="2" />
+                </div>
+                <div class="form-field">
+                  <label for="calc-meal-type" class="form-label">Hunger Level</label>
+                  <select id="calc-meal-type" class="form-control">
+                    <option value="snack">Light Coffee & Snack (₹75/head)</option>
+                    <option value="balanced" selected>Standard Meal: Coffee + Momos + Chowmein (₹135/head)</option>
+                    <option value="feast">Grand Feast: Pizza + Pasta + Coffee + Momos (₹190/head)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="background: rgba(217, 119, 6, 0.1); border: 1px solid var(--border-amber); border-radius: var(--radius-md); padding: 20px; text-align: center;">
+                <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Estimated Total Bill</div>
+                <div id="calc-total-bill" style="font-size: 2.2rem; font-weight: 800; color: var(--coffee-crema); margin: 4px 0;">₹270</div>
+                <div id="calc-per-person" style="font-size: 0.9rem; color: #4ade80; font-weight: 600;">₹135 / person (Safely within ₹1–200 budget!)</div>
+                <div id="calc-items-list" style="font-size: 0.82rem; color: var(--text-secondary); margin-top: 8px;">
+                  Ideal order: 2x Desi Beaten Coffee + Steamed Momos + Chowmein Sharing
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Live Data Section (Delhi Pulse, Weather & Pairing) -->
+    <section id="live-data" class="live-data-section" aria-labelledby="live-heading">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Live Integrations</div>
+          <h2 id="live-heading" class="section-h2">Real-Time Delhi Weather & Cafe Pulse</h2>
+          <p class="section-p">
+            Live telemetry from Hari Nagar connected to our automated culinary pairing engine.
+          </p>
+        </div>
+
+        <div class="live-api-grid">
+          <!-- Weather API Card -->
+          <article class="api-card">
+            <div>
+              <span class="api-badge">📡 Open-Meteo Live API</span>
+              <h3 style="font-size: 1.15rem; font-weight: 700;">Hari Nagar, New Delhi</h3>
+              <div id="live-delhi-temp" class="api-main-val">--°</div>
+              <p id="live-weather-desc" class="api-status-text">Fetching live forecast for Hari Nagar...</p>
+            </div>
+            <div id="live-pairing-text" class="pairing-recommendation-pill">
+              Calculating seasonal pairing...
+            </div>
+          </article>
+
+          <!-- Cafe Clock & Operating Card -->
+          <article class="api-card">
+            <div>
+              <span class="api-badge">⏰ Live Cafe Clock</span>
+              <h3 style="font-size: 1.15rem; font-weight: 700;">Indian Standard Time (IST)</h3>
+              <div id="live-delhi-clock" class="api-main-val" style="font-size: 1.9rem; font-family: var(--font-mono);">--:--:--</div>
+              <p class="api-status-text">
+                Kitchen operates from 11:00 AM until 12:00 Midnight. Late night orders accepted till 11:45 PM.
+              </p>
+            </div>
+            <div class="pairing-recommendation-pill" style="border-color: rgba(34, 197, 94, 0.4); background: rgba(34, 197, 94, 0.08); color: #4ade80;">
+              ✓ Kitchen Open & Steaming Hot
+            </div>
+          </article>
+
+          <!-- Air & Ambience Card -->
+          <article class="api-card">
+            <div>
+              <span class="api-badge">🍃 Indoor Environment</span>
+              <h3 style="font-size: 1.15rem; font-weight: 700;">Beri Wala Bagh Sanctuary</h3>
+              <div id="live-delhi-aqi" class="api-main-val" style="font-size: 1.6rem; color: #5eead4;">HEPA Purified</div>
+              <p class="api-status-text">
+                Our indoor hall features continuous dual HEPA medical air filtration and fresh coffee bean aromatics.
+              </p>
+            </div>
+            <div class="pairing-recommendation-pill" style="border-color: rgba(20, 184, 166, 0.4); background: rgba(20, 184, 166, 0.1); color: #5eead4;">
+              Pure, clean & breathable indoor air
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. AI Chatbot Section: Gaia AI Barista -->
+    <section id="chatbot" class="chatbot-section" aria-labelledby="chatbot-heading">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Proprietary Intelligent Assistant</div>
+          <h2 id="chatbot-heading" class="section-h2">Meet Gaia AI — Your Personal Kaffèe Sommelier</h2>
+          <p class="section-p">
+            Ask Gaia anything about our hand-beaten secret recipe, custom dietary preferences, spice adjustments, or instant booking recommendations.
+          </p>
+        </div>
+
+        <div class="chatbot-wrapper">
+          <!-- Chat Topbar -->
+          <div class="chatbot-topbar">
+            <div class="gaia-identity">
+              <div class="gaia-avatar" aria-hidden="true">☕</div>
+              <div class="gaia-names">
+                <h3>Gaia AI <span>(Kaffèe Sommelier)</span></h3>
+                <p>Knowledge of all 32+ dishes, recipes, timings & Milap Market directions</p>
+              </div>
+            </div>
+
+            <div class="chatbot-tools">
+              <span style="font-size: 0.75rem; color: #4ade80; background: rgba(34,197,94,0.1); padding: 4px 10px; border-radius: var(--radius-full); border: 1px solid rgba(34,197,94,0.3);">
+                ● Barista Active
+              </span>
+            </div>
+          </div>
+
+          <!-- Chat Messages Area -->
+          <div id="chat-messages" class="chat-messages-container" role="log" aria-live="polite">
+            <!-- Welcome Experience Card -->
+            <div class="chat-welcome-card">
+              <h4>Welcome to The Usual Kaffèe</h4>
+              <p>
+                I am Gaia, your cafe companion. Ask me for recommendations based on your craving, budget, or dietary needs. Or click one of the quick suggestions below!
+              </p>
+
+              <div class="prompt-chips-grid">
+                <button class="prompt-chip" data-prompt="What makes your hand-beaten coffee so special?">
+                  ☕ Hand-Beaten Coffee Secrets
+                </button>
+                <button class="prompt-chip" data-prompt="What are the best momos and pasta you serve?">
+                  🥟 Momos & Mixed Sauce Pasta
+                </button>
+                <button class="prompt-chip" data-prompt="Can I get a full meal under ₹150?">
+                  💰 Pocket Meal Under ₹150
+                </button>
+                <button class="prompt-chip" data-prompt="Are you an LGBTQ+ friendly and safe space?">
+                  🏳️‍🌈 Inclusivity & Safe Space
+                </button>
+                <button class="prompt-chip" data-prompt="Where in Milap market are you and what are your timings?">
+                  📍 Directions & Midnight Timings
+                </button>
+              </div>
+            </div>
+
+            <!-- Initial Assistant Greeting -->
+            <div class="chat-bubble bot">
+              <div class="bubble-avatar" aria-hidden="true">☕</div>
+              <div class="bubble-body">
+                <div class="bubble-content">
+                  Namaste & welcome! Warm greetings from <strong>The Usual Kaffèe</strong> in Hari Nagar. Whether you are craving our signature hand-beaten coffee foam or steaming hot spicy momos, I am here to guide your culinary journey. What are you in the mood for today?
+                </div>
+                <div class="bubble-meta">
+                  <span>Gaia AI · Just now</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div id="typing-indicator" class="typing-indicator" aria-hidden="true">
+              <div class="typing-dot"></div>
+              <div class="typing-dot"></div>
+              <div class="typing-dot"></div>
+            </div>
+          </div>
+
+          <!-- Chat Input Bar -->
+          <div class="chatbot-input-bar">
+            <form id="chat-form" class="chat-input-form">
+              <input 
+                type="text" 
+                id="chat-input" 
+                class="chat-input" 
+                placeholder="Ask Gaia: 'Recommend something spicy', 'What is farmhouse pizza?', 'Parking near cafe'..." 
+                autocomplete="off" 
+                aria-label="Ask Gaia AI a question" 
+                required 
+              />
+              <button type="submit" class="chat-send-btn" aria-label="Send message">
+                ➤
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Data Visualization Section (Chart.js) -->
+    <section id="dataviz" class="dataviz-section" aria-labelledby="viz-heading">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Cafe Intelligence & Analytics</div>
+          <h2 id="viz-heading" class="section-h2">Diner Insights & Taste Metrics</h2>
+          <p class="section-p">
+            Data synthesized from 32+ verified reviews, popular hours footfall curves, and sensory cupping metrics.
+          </p>
+        </div>
+
+        <div class="charts-grid">
+          <!-- Chart 1: Popular Times Footfall -->
+          <div class="chart-card">
+            <div class="chart-head">
+              <div class="chart-title">
+                <h3>Popular Footfall Hours (Tuesdays / Weekly)</h3>
+                <p>Google Maps footfall frequency from 6 AM to 12 AM Midnight</p>
+              </div>
+              <span style="font-size: 0.75rem; color: var(--amber-glow); background: var(--amber-subtle); padding: 4px 10px; border-radius: var(--radius-full); font-weight: 600;">
+                Peak: 7 PM – 10 PM
+              </span>
+            </div>
+            <div class="chart-canvas-box">
+              <canvas id="popularHoursChart" aria-label="Bar chart showing popular hours footfall" role="img"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 2: Flavor Profile Radar -->
+          <div class="chart-card">
+            <div class="chart-head">
+              <div class="chart-title">
+                <h3>Sensory Cupping Comparison</h3>
+                <p>Hand-Beaten Coffee vs Standard Commercial Espresso</p>
+              </div>
+              <span style="font-size: 0.75rem; color: #4ade80; background: rgba(34,197,94,0.1); padding: 4px 10px; border-radius: var(--radius-full); font-weight: 600;">
+                +38% Crema Body
+              </span>
+            </div>
+            <div class="chart-canvas-box">
+              <canvas id="flavorRadarChart" aria-label="Radar chart comparing coffee profiles" role="img"></canvas>
+            </div>
+          </div>
+
+          <!-- Chart 3: Craving Demand Doughnut (Spans full on grid) -->
+          <div class="chart-card" style="grid-column: 1 / -1;">
+            <div class="chart-head">
+              <div class="chart-title">
+                <h3>Customer Favorite Dish Distribution</h3>
+                <p>Breakdown of dishes highlighted across verified Google reviews & regular orders</p>
+              </div>
+            </div>
+            <div class="chart-canvas-box" style="height: 260px;">
+              <canvas id="demandDoughnutChart" aria-label="Doughnut chart of popular menu dishes" role="img"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Timeline / Process Section -->
+    <section id="process" class="timeline-section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Craft & Heritage</div>
+          <h2 id="process-heading" class="section-h2">From Coffee Bean & Dough to Your Table</h2>
+          <p class="section-p">
+            How we maintain authentic quality in every single cup and plate served in Milap Market.
+          </p>
+        </div>
+
+        <div class="timeline-track">
+          <!-- Step 1 -->
+          <div class="timeline-step">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content-card">
+              <div class="step-number">Phase 01</div>
+              <h3>Ethical Roasting & Bean Selection</h3>
+              <p>
+                We source fresh high-altitude shade-grown Arabica beans from Chikmagalur estates, medium-dark roasted to preserve natural sweet cocoa undertones.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-step">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content-card">
+              <div class="step-number">Phase 02</div>
+              <h3>The Traditional Hand-Beaten Whip</h3>
+              <p>
+                Instead of mechanical shortcuts, our baristas hand-beat coffee crystals with raw cane sugar until an ultra-dense, glossy pale-gold caramel cloud emerges.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-step">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content-card">
+              <div class="step-number">Phase 03</div>
+              <h3>High-Flame Woks & Stone Deck Ovens</h3>
+              <p>
+                Our momos are steam-cooked in bamboo baskets, while our farmhouse pizzas crisp up on stone hearths and chowmein is flashed on roaring iron woks.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-step">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content-card">
+              <div class="step-number">Phase 04</div>
+              <h3>Midnight Hospitality & Warm Serving</h3>
+              <p>
+                Every order is garnished and presented with care, whether you are enjoying it at our cafe table, roadside in your car, or at home.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Gallery Section with Lightbox Modal -->
+    <section id="gallery" class="gallery-section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Visual Atmosphere</div>
+          <h2 id="gallery-heading" class="section-h2">Moments at The Usual Kaffèe</h2>
+          <p class="section-p">
+            Sneak a peek into our warm neon-lit ambiance, handcrafted dishes, and cozy cafe corners.
+          </p>
+        </div>
+
+        <div class="gallery-filter-bar" role="toolbar" aria-label="Filter gallery images">
+          <button class="gallery-filter-btn active" data-category="all">All Photos</button>
+          <button class="gallery-filter-btn" data-category="coffee">Coffee Brews</button>
+          <button class="gallery-filter-btn" data-category="food">Food & Fusion</button>
+          <button class="gallery-filter-btn" data-category="vibe">Cafe Ambience</button>
+        </div>
+
+        <div class="gallery-masonry">
+          <!-- Item 1 -->
+          <div class="gallery-item" data-category="coffee" tabindex="0" role="button" aria-label="View Hand-Beaten Velvet Coffee photo">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop" alt="Pouring velvety frothy coffee into artisanal cup" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-item-title">Signature Hand-Beaten Coffee</div>
+              <div class="gallery-item-cat">Hot Coffee · House Special</div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-item" data-category="food" tabindex="0" role="button" aria-label="View Steamed Dumplings Momos photo">
+            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=800&auto=format&fit=crop" alt="Steaming fresh momos served with red chili dip" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-item-title">Spicy Steamed Veg Momos</div>
+              <div class="gallery-item-cat">Street Fusion · Dumplings</div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-item" data-category="food" tabindex="0" role="button" aria-label="View Mixed Sauce Penne Pasta photo">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3d5d6281691?q=80&w=800&auto=format&fit=crop" alt="Creamy mixed sauce penne pasta with herbs" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-item-title">Mixed Sauce Penne Pasta</div>
+              <div class="gallery-item-cat">Italian Delight · Cheesy</div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-item" data-category="food" tabindex="0" role="button" aria-label="View Farmhouse Pizza photo">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop" alt="Fresh baked pizza with melting cheese and vegetables" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-item-title">Farmhouse Stone-Baked Pizza</div>
+              <div class="gallery-item-cat">Stone-Baked · Fresh Dough</div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="gallery-item" data-category="vibe" tabindex="0" role="button" aria-label="View Cafe Ambience photo">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=800&auto=format&fit=crop" alt="Warm ambient cozy cafe interior with warm lighting" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-item-title">Warm Evening Ambience</div>
+              <div class="gallery-item-cat">Milap Market · Cozy Seating</div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="gallery-item" data-category="coffee" tabindex="0" role="button" aria-label="View Iced Frappe photo">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=800&auto=format&fit=crop" alt="Cold iced hand-beaten frappe with chocolate drizzle" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-item-title">Chilled Caramel Beaten Frappe</div>
+              <div class="gallery-item-cat">Summer Brew · Refreshing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image preview">
+      <div class="lightbox-img-box">
+        <button id="lightbox-close" class="lightbox-close-btn" aria-label="Close image popup">&times;</button>
+        <img id="lightbox-img" src="" alt="Enlarged gallery view" />
+      </div>
+    </div>
+
+    <!-- 12. Statistics Section -->
+    <section class="stats-section" aria-labelledby="stats-heading">
+      <div class="container">
+        <h2 id="stats-heading" class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;">Cafe Key Metrics</h2>
+        <div class="stats-counter-grid">
+          <div class="stat-counter-card">
+            <div class="stat-counter-number" data-target="4.7">0</div>
+            <div class="stat-counter-label">Google Rating Out of 5.0</div>
+          </div>
+          <div class="stat-counter-card">
+            <div class="stat-counter-number" data-target="32">0</div>
+            <div class="stat-counter-label">Verified 5-Star Reviews</div>
+          </div>
+          <div class="stat-counter-card">
+            <div class="stat-counter-number" data-target="10000">0</div>
+            <div class="stat-counter-label">Hand-Beaten Cups Whipped</div>
+          </div>
+          <div class="stat-counter-card">
+            <div class="stat-counter-number" data-target="100">0</div>
+            <div class="stat-counter-label">% Inclusive LGBTQ+ Safe Space</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. FAQ Accordion Section -->
+    <section id="faq" class="faq-section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Got Questions?</div>
+          <h2 id="faq-heading" class="section-h2">Frequently Asked Questions</h2>
+          <p class="section-p">
+            Everything you need to know before stepping into The Usual Kaffèe.
+          </p>
+        </div>
+
+        <div class="faq-accordion" role="region" aria-label="Frequently Asked Questions">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>What is special about the Hand-Beaten Coffee?</span>
+              <span class="faq-icon-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              Unlike automatic espresso steam wands, authentic Indian hand-beaten coffee is manually whisked with sugar crystals until it forms a creamy, glossy butterscotch froth. When hot milk is folded into it, the whipped layer floats on top like a cloud, offering unmatched silkiness and nostalgic flavor.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>What are your operating hours and late night policies?</span>
+              <span class="faq-icon-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              We are open every day from 11:00 AM until 12:00 Midnight. We accept kitchen dine-in and pickup orders up until 11:45 PM. It is the perfect spot for late night drives and midnight coffee catchups in West Delhi!
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>What is your price range per person?</span>
+              <span class="faq-icon-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              Our verified average spend is between ₹1 and ₹200 per head. For example, a hot hand-beaten coffee (₹89) paired with freshly steamed momos (₹99) comes out to under ₹190, making high quality dining affordable for students and families alike.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Is parking available at Milap Market, Hari Nagar?</span>
+              <span class="faq-icon-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              Yes! There is ample street and kerbside parking right along Milap Market and Block J, Beri Wala Bagh. We also offer dedicated Kerbside Pickup—simply call us at 088821 61836 when you arrive and we'll deliver your order right to your car window.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Is The Usual Kaffèe LGBTQ+ friendly and safe?</span>
+              <span class="faq-icon-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              100% yes! We proudly identify as women-owned and maintain a zero-tolerance policy against discrimination. We are an officially registered LGBTQ+ friendly space where everyone can comfortably be themselves.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Do you offer no-contact delivery and takeout?</span>
+              <span class="faq-icon-arrow" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              Yes, we support both takeaway pickup, drive-by kerbside collection, and sealed no-contact delivery across Hari Nagar, Subhash Nagar, Tilak Nagar, and Janakpuri.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. Contact & Table Reservation Form -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="contact-info-card">
+          <div class="section-tag">Find & Visit Us</div>
+          <h2 id="contact-heading" class="section-h2" style="font-size: 2.2rem; margin-bottom: 14px;">Drop By for a Cup</h2>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+            Located in the heart of Hari Nagar's bustling Milap Market. Follow the aroma of freshly roasted coffee and spices!
+          </p>
+
+          <div class="contact-meta-list">
+            <div class="contact-meta-row">
+              <div class="contact-icon-box" aria-hidden="true">📍</div>
+              <div class="contact-meta-text">
+                <h4>Address & Plus Code</h4>
+                <p>
+                  Milap market, J/41, Block J, Beri Wala Bagh,<br />
+                  Hari Nagar, New Delhi, Delhi, 110064<br />
+                  <strong>Plus Code: J4M6+JH New Delhi</strong>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-meta-row">
+              <div class="contact-icon-box" aria-hidden="true">📞</div>
+              <div class="contact-meta-text">
+                <h4>Direct Phone Line</h4>
+                <p>
+                  <a href="tel:08882161836" style="color: var(--amber-glow); font-weight: 700; text-decoration: none;">088821 61836</a><br />
+                  Available 11:00 AM – 12:00 Midnight
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-meta-row">
+              <div class="contact-icon-box" aria-hidden="true">🕒</div>
+              <div class="contact-meta-text">
+                <h4>Opening Hours</h4>
+                <p>
+                  Monday – Sunday: 11:00 AM – 12:00 AM Midnight<br />
+                  Open all 7 days of the week
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reservation Form -->
+        <div class="booking-form-card">
+          <h3 style="font-size: 1.5rem; font-family: var(--font-serif); margin-bottom: 6px; color: var(--coffee-crema);">
+            Reserve a Table or Pre-Order
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 24px;">
+            Guaranteed table seating with zero wait time. Instant confirmation.
+          </p>
+
+          <form id="table-booking-form">
+            <div class="form-group-grid">
+              <div class="form-field">
+                <label for="book-name" class="form-label">Full Name *</label>
+                <input type="text" id="book-name" class="form-control" placeholder="Aarav Sharma" required />
+              </div>
+              <div class="form-field">
+                <label for="book-phone" class="form-label">Phone Number *</label>
+                <input type="tel" id="book-phone" class="form-control" placeholder="98765 43210" required />
+              </div>
+            </div>
+
+            <div class="form-group-grid">
+              <div class="form-field">
+                <label for="book-date" class="form-label">Date</label>
+                <input type="date" id="book-date" class="form-control" />
+              </div>
+              <div class="form-field">
+                <label for="book-time" class="form-label">Preferred Time</label>
+                <select id="book-time" class="form-control">
+                  <option>12:00 PM (Lunch)</option>
+                  <option>02:00 PM (Afternoon)</option>
+                  <option>05:00 PM (Evening Chai & Coffee)</option>
+                  <option selected>07:30 PM (Dinner Rush)</option>
+                  <option>09:30 PM (Late Night Vibe)</option>
+                  <option>11:00 PM (Midnight Run)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group-grid">
+              <div class="form-field">
+                <label for="book-guests" class="form-label">Number of Guests</label>
+                <select id="book-guests" class="form-control">
+                  <option>1 Person (Solo Work)</option>
+                  <option selected>2 People (Cozy Table)</option>
+                  <option>3 - 4 People</option>
+                  <option>5 - 8 People (Lounge Setup)</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="book-seating" class="form-label">Seating Preference</label>
+                <select id="book-seating" class="form-control">
+                  <option>Quiet Window Seat</option>
+                  <option>Main Hall & Music Vibe</option>
+                  <option>Work Plug & Laptop Corner</option>
+                  <option>Kerbside Car Pickup</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="book-notes" class="form-label">Special Requests (Optional)</label>
+              <textarea id="book-notes" class="form-control" rows="2" placeholder="Birthday celebration, extra chili garlic chutney, oat milk..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; font-size: 1rem;">
+              Confirm Reservation & Receive Booking Code
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 15. Footer Section -->
+  <footer class="site-footer">
+    <div class="container footer-top-grid">
+      <div>
+        <a href="#hero" class="brand-link" style="margin-bottom: 12px; display: inline-flex;">
+          <div class="brand-logo-mark">U</div>
+          <div class="brand-titles">
+            <div class="brand-title">THE USUAL KAFFÈE</div>
+            <div class="brand-subtitle">थे उसूल काफ़ी · HARI NAGAR</div>
+          </div>
+        </a>
+        <p class="footer-brand-p">
+          Crafting unforgettable memories in New Delhi over hand-beaten coffees, steamy momos, and warm ambient tunes. Women-owned & LGBTQ+ friendly safe space.
+        </p>
+        <div style="font-size: 0.85rem; color: var(--amber-glow); font-weight: 600;">
+          📞 088821 61836 · Milap Market, Delhi 110064
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#features">Signature Menu</a></li>
+          <li><a href="#dashboard">Live Seating</a></li>
+          <li><a href="#chatbot">Gaia AI Barista</a></li>
+          <li><a href="#dataviz">Popular Hours</a></li>
+          <li><a href="#faq">Frequently Asked</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Offerings</h4>
+        <ul class="footer-links">
+          <li><a href="#features">Hand-Beaten Coffee</a></li>
+          <li><a href="#features">Steamed & Fried Momos</a></li>
+          <li><a href="#features">Mixed Sauce Penne</a></li>
+          <li><a href="#features">Farmhouse Pizza</a></li>
+          <li><a href="#features">Kerbside Drive-Thru</a></li>
+          <li><a href="#features">No-Contact Delivery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul class="footer-links">
+          <li><a href="#about">Women-Owned Business</a></li>
+          <li><a href="#about">LGBTQ+ Safe Space</a></li>
+          <li><a href="#contact">Google Maps Directions</a></li>
+          <li><a href="#contact">Table Reservations</a></li>
+          <li><a href="tel:08882161836">Call: 088821 61836</a></li>
+          <li><a href="#hero">Back to Top ↑</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>
+        © 2026 The Usual Kaffèe (थे उसूल काफ़ी). All rights reserved.
+      </div>
+      <div>
+        Crafted for Web Excellence · Pure HTML, CSS & Vanilla JavaScript
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top of page">
+    ↑
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="./script.js"></script>
+</body>
+</html>

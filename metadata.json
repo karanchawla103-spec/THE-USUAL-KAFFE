@@ -1,0 +1,6 @@
+{
+  "name": "The Usual Kaffèe | Artisan Cafe & Eatery",
+  "description": "Experience The Usual Kaffèe (थे उसूल काफ़ी) in Hari Nagar, New Delhi. Artisan brews, hand-beaten coffee, live cafe vibes, smart Gaia AI barista, and table reservations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
